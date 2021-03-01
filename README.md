@@ -56,20 +56,20 @@ promover eventos de arrecadação e doação de mantimentos para famílias de ba
 |  |  |
 | ----------- | ----------- |
 | O problema de      | Vulnerabilidade social na pandemia.       |
-| Afeta   | Os habitantes do Distrito Federal        |
-| No qual o impacto é | Índice alto de desemprego        |
-| Uma solução de sucesso seria      | Promover um aplicativo que facilita a comunicação entre um profissional (freelancer) e um cliente (o que necessita de um serviço), e, através desse vínculo, oferecer oportunidades de emprego e sanar a demanda de um trabalho, tornando-se uma medida eficaz para ambos os lados    |
+| Afeta   | Famílias carentes e de baixa renda da Ceilândia.        |
+| No qual o impacto é | É redução da renda por conta da diminuição de salários e do aumento do desemprego.   |
+| Uma solução de sucesso seria      | Promover ações voluntárias da comunidade, em busca de recursos para famílias carentes.    |
 
 ### 1. Declaração da posição do produto
 
-|  |  |
+|  |    |
 | ----------- | ----------- |
-| Para  | Freelancers e clientes do Distrito Federal.       |
-| Quem  | Busca complementar ou adquirir uma renda (freelancer), ou tem uma demanda de serviço a ser sanada (cliente)        |
-| O (Jober) | É um aplicativo.        |
-| Que | Busca integrar um cliente com uma necessidade de serviço, e um freelancer disposto a prestar o serviço de forma rápida e eficiente.   |
-| Diferente de |  Linkedin.  |
-| Nosso produto |  Organiza os tipos de serviço ofertados em categorias, disponibiliza diversos freelancers capacitados a prestar o serviço, possibilita a comunicação entre as duas partes (cliente e freelancer) através de um sistema de chat, facilitando a negociação do serviço, oferece a possibilidade de pagamento por meio de carteira digital e outras formas de pagamento.  |
+| Para  | Familias da Ceilândia       |
+| No qual  | Foram afetadas pelos efeitos da pandemia        |
+| O (Helpy) | É um aplicativo.       |
+| Que | Busca promover ações beneficentes.   |
+| Diferente de |  De outras iniciativas tradicionais.  |
+| Nosso produto |  Oferece uma plataforma digital que busca integrar famílias e voluntários de forma eficiente em eventos beneficentes.  |
 
 ## Declaração das partes interessadas
 
@@ -77,17 +77,20 @@ promover eventos de arrecadação e doação de mantimentos para famílias de ba
 
 | Nome      | Descrição |
 | ----------- | ----------- |
-| Freelancer      | Pessoa que deseje oferecer algum tipo de serviço, desde um “faz-tudo” até algo que demende uma habilidade specifica.       |
-| Cliente   | Pessoa que necessite de um serviço não voltado para area empresarial.        |
-| Administrador      | Pessoa responsável de cuidar da integridade do sistema.       |
-| Desenvolvedores   | Pessoa responsável por cuidar da codificação e desenvolvimento do software em si.: Mateus, Gabriel e Luiz Fernando.        |
-| Patrocinadores      | Pessoa responsável por oferecer uma ajuda monetária para o desenvolvimento do software. Raniery e Ruan.       |
+| Voluntário      | Pessoa disposta a participar da organização dos eventos.       |
+| Parceiros   | Instituições disposta a ajudar monetariamente.        |
+| Doador      | Pessoa com disposição para ajudar o próximo.       |
+| Organizador   | Pessoa encarregada de coordenar os eventos beneficentes.Ruan e Raniery.        |
+| Desenvolvedores   | Pessoa responsável por cuidar da codificação e desenvolvimento do software em si: Mateus, Gabriel, Luiz Fernando.        |
+| Família      | Família que se encontre em situação de vulnerabilidade       |
 
 ### 2. Ambiente do usuário
 
-O cenário atual do negócio é simples e se baseia na relação de uma pessoa que necessita de um serviço e uma outra que oferece seu serviço
-por um preço, como um dono de imóvel que contrata um pedreiro para uma
-reforma, por exemplo. Entretanto, no ambiente atual, encontrar alguém para um determinado tipo de serviço não é uma tarefa fácil, ainda mais quando é algo muito específico, e a escolha dos profissionais que são responsáveis por prestar algum serviço é normalmente feita através da recomendação de um terceiro, delimitando o escopo de profissionais com a mesma especialidade que poderiam prestar o tal serviço.
+Atualmente, o cenário se descreve de maneira simples: Há famílias as quais se encontram em um
+grupo carente da sociedade e há grupos voluntários que se dispõem a oferecer ajuda. Para tal, são
+organizados eventos beneficentes na comunidade, onde pessoas dispostas a participar efetuam
+doações de mantimentos e os voluntários se responsabilizam pela checagem da qualidade do
+produto e entrega aos necessitados.
 
 ## Visão geral do produto
 
@@ -95,19 +98,19 @@ reforma, por exemplo. Entretanto, no ambiente atual, encontrar alguém para um d
 
 | Necessidades      | Funcionalidades correspondentes | Responsável |
 | ----------- | ----------- | ----------- |
-| Cadastrar usuários no sistema e definir a categoria do perfil do usuário para que possam ter acesso aos recursos oferecidos pela plataforma.      |<ul><li>Cadastrar Usuário </li><li>Consultar Usuário </li><li>Editar Usuário  </li><li>Excluir usuário </li></ul> | Mateus Pereira De Souza Moreira |
-| Cadastrar o tipo de serviço oferecido pelo freelancer, afim de disponibilizar para que os clientes possam visualizar e escolher.|<ul><li>Cadastrar Serviço </li><li>Consultar Serviço</li><li>Editar Serviço  </li><li>Excluir Serviço. </li></ul> | Ruan Lucas Soares do Nascimento |
-| Ofertar uma proposta para um freelancer, após a escolha do serviço.|<ul><li>Criar Proposta </li><li>Listar Proposta</li><li>Cancelar Proposta</li><li>Escolher Proposta</li><li>Aceitar Proposta</li><li>Recusar Proposta</li></ul> | Gabriel Alves de Paulo |
-| Facilitar a comunicação entre os usuários, para que possam negociar de forma mais fácil e prática.|<ul><li>Enviar Mensagem</li><li>Visualizar Mensagem</li><li>Bloquear Usuário</li><li>Desbloquear Usuário</li></ul> | Luiz Fernando Pereira da Costa |
-| Possibilitar o pagamento por meio da própria plataforma ou por meio de outras formas de pagamento.|<ul><li>Cadastrar Formas de Pagamento</li><li>Consultar Saldo</li><li>Editar Formas de Pagamento</li><li>Cancelar Formas de Pagamento</li><li>Emitir recibo</li></ul> | Raniery Pereira Azevedo |
+| Manter o registro da entrada e saída de todos os recursos arrecadados de cada evento.      |<ul><li>Incluir mantimento </li><li>Retirar mantimentos </li><li>Listar mantimentos  </li></ul> | Gabriel Alves De Paulo |
+| Manter o controle de todos os voluntários envolvidos nas ações comunitárias.|<ul><li>Cadastrar voluntario </li><li>Listar voluntario</li><li>Alterar voluntario  </li><li>Deletar voluntario. </li></ul> | Mateus Pereira De Souza Moreira |
+| Manter a organização das etapas nos eventos solidários. A partir do planejamento detalhado de todas as fases(arrecadação/distribuição) da organização do evento, delegando responsabilidades, elegendo prioridades e reservando prazos para evitar aglomerações nas etapas.|<ul><li>Criar evento </li><li>Listar evento</li><li>-Alterar voluntario</li><li>Deletar voluntario</li></ul> | Ruan Lucas Soares do Nascimento |
+| Manter o registro de todas as famílias carentes e suas necessidades.|<ul><li>Cadastrar familia</li><li>Listar Familia</li><li>Atualizar familia</li><li>Excluir familia</li></ul> | Luiz Fernando Pereira da Costa |
+| Manter o registro das instituições parceiras de cada evento.|<ul><li>Cadastrar parceiros</li><li>Alterar parceiros</li><li>Listar parceiros</li><li>Deletar parceiros</li></ul> | Raniery Pereira Azevedo |
 
 ## Outros requisitos do produto
 
 | Requisitos não-funcionais      |
 | ----------- |
-| RNF 1: O sistema necessitará de conexão com internet.      |
+| RNF 1: O sistema necessitará de um dispositivo que possibilite o acesso a internet (Dados móveis ou Rede WIFI).      |
 | RNF 2: O sistema funcionará apenas em dispositivos com Android (6.0.1 ou mais) e IOS (10 ou mais).   |
-| RNF 3: O sistema necessitará de conexão com o GPS do smartphone.  |
+| RNF 3: O sistema possibilitará a verificação de duas etapas para maior segurança.  |
 
 ## Requisitos funcionais
 
@@ -539,22 +542,7 @@ reforma, por exemplo. Entretanto, no ambiente atual, encontrar alguém para um d
 | RN 1.1.1 (Cadastrar Usuário): Todo usuário do JOBER deverá obrigatoriamente vinculado a somente um CPF. |
 | RN 1.1.2 (Cadastrar Usuário): Todo usuário do JOBER deverá obrigatoriamente estar cadastrado com um dos tipos de usuário, sendo: cliente, freelancer e administrador. |
 | RN 1.1.3 (Preenchimento Obrigatório): Todos os campos do cadastro são obrigatórios, sendo eles: nome, sexo, cpf, cep, estado e tipo de usuário. |
-| RN 1.1.4 (Cadastro de Senha): O usuário deverá cadastrar uma senha de no mínimo 8 e no máximo 12 caracteres. A senha não poderá conter dados que estejam presentes no cadastro do usuário. |
-|RN 1.2 (Consultar Usuário): O sistema não poderá apresentar dados sensíveis para outros usuários, tais como cartão de crédito, CPF e endereço do usuário consultado.|
-|RN 1.3 (Alteração do Cadastro): O cadastro poderá ser atualizado quando houver alteração dos dados do usuário. Todos os campos estarão habilitados para atualização, exceto o campo CPF (somente editável caso o usuário tenha como provar judicialmente, ter mudado o CPF).|
-|RN 1.4.1 (Exclusão de Cadastro): O usuário sendo cliente ou freelancer, não poderá ser excluído caso tenham alguma pendência financeira no APP.|
-|RN 1.4.2 (Exclusão de Cadastro): Se houver a necessidade de desativação por motivos de: mudança de cidade, falecimento, ou por quaisquer outros motivos expressos pelo usuário, o mesmo deverá receber o status “Usuário Inativo”.|
-|RN 2.1 (Criar Serviço): O usuário pode cadastrar no máximo cinco tipos de serviço diferentes.|
-|RN 3.1 (Escolher Proposta): O serviço só pode ser aceito por apenas 1 freelancer.|
-|RN 3.1.1 (Criar Proposta,Escolher Proposta): Os status do serviço são divididos em -Proposta em analise -Proposta cancelada -Proposta aceita
-|RN 3.2 (Cancelar Proposta): Caso o FreeLancer não tenha aceitado o contrato, o cliente poderá fazer o cancelamento em até 24h.|
-|RN 3.2.1 (Cancelar Proposta): O cancelamento do contrato só pode ser feito caso o FreeLancer não tenha aceitado ainda.|
-|RN 4.1 (Enviar Mensagem): Uma identificação do usuário deve ser informada (Nome).|
-|RN 4.2 (Bloquear Usuário): É permitido apenas assuntos vinculados ao aspecto professional, sendo permitido um usuário reportar e bloquear, caso submetido a assuntos pessoais.|
-|RN 4.2.1 (Bloquear Usuário): Caso haja qualquer tipo de discordia e descumprimento de regras, o usuário poderá ser reportado e bloqueado.|
-|RN 5.1 (Cadastrar Forma de Pagamento): É permitido pagamentos com cartão de crédito.|
-|RN 5.1.1 (Cadastrar Forma de Pagamento): O usuário dispõem de uma carteira digital.|
-|RN 5.1.2 (Cadastrar Forma de Pagamento): É permitido pagamentos através diretamente da plataforma.|
+
 
 ## Lista de requisitos não funcionais
 
