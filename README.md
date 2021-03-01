@@ -127,7 +127,7 @@ produto e entrega aos necessitados.
 
   | Nome do caso de uso: | CADASTRAR VOLUNTARIO                             |
   | ----------- | -----------                                               |
-  | Ator Principal:⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ | Voluntário                                            |
+  | Ator Principal:⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀|⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Voluntário                                            |
   | Atores Secundários:|                                                    |
   | Descrição: | Este caso de uso permite ao ator, se cadastrar no sistema. |
   | Pré-condições: | O voluntário deve ter acesso a pagina inicial do sistema. |
