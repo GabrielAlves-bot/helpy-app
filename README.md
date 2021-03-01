@@ -125,13 +125,13 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
-  | Nome do caso de uso: | CADASTRAR USUÁRIO |
+  | Nome do caso de uso: | CADASTRAR VOLUNTARIO |
   | ----------- | ----------- |
-  | Ator Principal: | Usuário |
+  | Ator Principal: | Voluntário |
   | Atores Secundários:| |
-  | Descrição: | Este caso de uso permite ao ator, se cadastrar no sistema. |
-  | Pré-condições: | O usuário deve ter acesso ao sistema. |
-  | Pós-condições: | Usuário cadastrado no sistema. |
+  | Descrição: | Este caso de uso permite ao ator, se cadastrar no sistema.. |
+  | Pré-condições: | O voluntário deve ter acesso a pagina inicial do sistema. |
+  | Pós-condições: | Voluntário cadastrado no sistema. |
 
   | Fluxo Basíco |
   | ----------- |
@@ -139,68 +139,58 @@ produto e entrega aos necessitados.
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
   |1| O caso de uso tem inicio quando o ator clica em cadastre-se, na pagina inicial. | O sistema apresenta um formulário. |
-  |2| O ator preenche as informações cadastrais. | O sistema valida os dados. <RN[1.1.1]><RN[1.1.2]><RN[1.1.3]>.|
-  |3| | O sistema armazena os dados, e redireciona o usuário para definir uma senha. |
-  |4| O ator digita uma senha. | O sistema valida senha.<RN[1.1.4]> e guarda. |
-  |5| | O sistema apresenta a mensagem “Usuário cadastrado”. O caso de uso e encerrado. |
+  |2| O ator preenche com seus dados. | O sistema valida e guarda os dados.|
+  |3| | O sistema apresenta um formulário para definição de usuário e senha. |
+  |4| O ator digita seu usuário e senha. | O sistema valida e guarda senha. |
+  |5| | O sistema apresenta a mensagem "Voluntário cadastrado" |
+  |6| | O sistema inclui o voluntário na lista de espera de voluntários". |
+  |7| | O caso de uso e encerrado. |
 
 
   | CDU-02 |
   | ----------- |
 
-  | Nome do caso de uso: | VISUALIZAR USUÁRIO |
+  | Nome do caso de uso: | VISUALIZAR VOLUNTARIO |
   | ----------- | ----------- |
-  | Ator Principal: | Usuário |
+  | Ator Principal: | Voluntário |
   | Atores Secundários:| |
-  | Descrição: | Este caso de uso permite ao ator, consultar, editar e excluir todas as informações do seu perfil de usuário. |
-  | Pré-condições: | O usuário deve estar autenticado no sistema. |
-  | Pós-condições: | Informações do usuário visualizadas. |
+  | Descrição: | Este caso de uso permite ao ator, consultar editar e excluir seu perfil. |
+  | Pré-condições: | O voluntário deve estar autenticado no sistema. |
+  | Pós-condições: | Consulta, edição ou exclusão do perfil. |
 
   | Fluxo Basíco |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| O caso de uso tem inicio na pagina inicial do app, quando o ator clica em visualizar dados de usuário. | O sistema recupera os dados do usuário. |
-  |2| | O sistema apresenta os dados para o usuário e as opção de voltar editar e excluir.<RN[1.3] >. |
+  |1| O caso de uso tem inicio na pagina inicial do APP, quando o ator clica em visualizar perfil. |O sistema recupera os dados do usuário.
+  |2| | O sistema apresenta os dados do perfil do voluntário. |
   |3| O ator em voltar para pagina inicial.| O caso de uso é encerrado. |
 
-  | FLUXO ALTERNATIVO 1 – EDITAR USUÁRIO |
+  | FLUXO ALTERNATIVO 1 – EDITAR VOLUNTÁRIO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| 2 – Editar dados. | O sistema recupera os dados. |
-  |2| | O sistema apresenta um formulário para edição dos dados. |
-  |3| | O sistema apresenta um formulário preenchido com os dados editáveis.<RN[1.1.3]>. |
-  |4| O ator modifica o campo que deseja alterar. | O sistema validada os dados. |
-  |5| | O sistema guarda os dados. |
-  |6| | O sistema apresenta a mensagem “Usuário alterado”. O caso de uso e encerrado. |
+  |1| 2 – O ator clica em editar perfil. | O sistema recupera os dados. |
+  |2| | O sistema apresenta um formulário para edição de dados. |
+  |3| O ator modifica os campos que deseja alterar. | O sistema valida e guarda os dados. |
+  |4|  | O sistema apresenta a mensagem "Voluntário alterado. |
 
 
-  | FLUXO ALTERNATIVO 2 – EXCLUIR USUÁRIO |
+  | FLUXO ALTERNATIVO 2 – EXCLUIR VOLUNTÁRIO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| 2 – O caso de uso tem inicio na pagina inicial do APP, quando o ator clica em excluir usuário. | O sistema recupera os dados. |
-  |2| | O sistema apresenta um popup, perguntando se deseja mesmo excluir o perfil. |
-  |3| O ator clica em sim, desejo excluir o meu perfil. | O sistema apresenta um checkbox com os possíveis motivos, e caixa de texto, caso queira relatar. |
-  |4| | O sistema guarda os motivos da exclusão e solicita novamente autenticação para exclusão.|
+  |1| 2 – O ator clica em excluir perfil. | O sistema recupera os dados. |
+  |2| | O sistema apresenta um POPUP,perguntando se deseja mesmo excluir o perfil. |
+  |3| O ator clica em sim, desejo excluir o meu perfil. | O sistema apresenta um CHECKBOX com os possíveis motivos, e caixa de texto, caso queira relatar outros motivos. |
+  |4| | O sistema valida e guarda os motivos da exclusão e solicita novamente autenticação para exclusão.|
   |5| O ator se autentica. | O sistema valida a autenticação. |
-  |6| | O sistema verifica pendências relacionadas ao usuário.<RN[1.4.1]>. |
-  |7| |O sistema exclui o usuário. O caso de uso é encerrado.|
+  |6| | O sistema exclui o voluntário. O sistema apresenta a mensagem “Voluntário excluído”. |
+  |7| |O caso de uso é encerrado.|
 
-
-  | FLUXO EXCEÇÃO – VALIDAÇÃO DE DADOS |
-  | ----------- |
-
-  | | Ações do Ator | Principal: Usuário Ações do Sistema: |
-  | ----------- | ----------- | ----------- |
-  |1| O fluxo de exceção tem inicio quando o ator tenta excluir o usuário. | O sistema apresenta um formulário para o usuário. |
-  |2| O ator preenche os dados com valores incorretos. | O sistema apresenta a mensagem “Dados incorretos”. E não permite continuar, até que sejam preenchidos corretamente.<RN[1.1.2]><RN[1.1.3]><RN[1.1.4]>. |
-  |3| O ator deixa de preencher alguns dados. | O sistema apresenta a mensagem “Dados em branco”. E não permite continuar, até que sejam preenchidos os dados.<RN[1.1.2]><RN[1.1.3]><RN[1.1.4]>. |
-  |4| O ator deixa o formulário totalmente em branco.| O sistema apresenta a mensagem “Formulário em branco”. E não permite continuar, até que sejam preenchidos os dados.<RN[1.1.2]><RN[1.1.3]><RN[1.1.4]>.|
 
 #### 2. Caso de uso Manter Serviço Ofertado – Ruan Lucas
 
@@ -208,38 +198,38 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
-  | Nome do caso de uso: | MANTER SERVIÇOS |
+  | Nome do caso de uso: | MANTER EVENTO |
   | ----------- | ----------- |
-  | Ator Principal: | Freelancer |
-  | Atores Secundários:| Cliente |
-  | Descrição: | Descreve os passos para que o Freelancer possa cadastrar, ler, atualizar e excluir um tipo de serviço ofertado. Descreve os passos para que o Cliente possa visualizar os serviços ofertados. |
-  | Pré-condições: | Ambos os atores devem estar cadastrados no sistema. O Cliente só terá acesso ao “Listar serviços ofertados”. |
+  | Ator Principal: | Organizador |
+  | Atores Secundários:| Voluntário |
+  | Descrição: | Descreve os passos para que o Organizador possa criar, listar, atualizar ou excluir um evento. |
+  | Pré-condições: | Ambos os atores devem estar cadastrados no sistema. Apenas o Organizador pode criar eventos. |
   | Pós-condições: | Apresentar mensagens de conclusão de acordo com a função desejada. |
 
-  | Fluxo Basíco – CADASTRAR SERVIÇO|
+  | Fluxo Basíco – CRIAR EVENTO|
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
   |1| Efetuar login no sistema. | Validar dados de login. |
-  |2| Clicar em “Perfil do usuário”. | Apresentar tela de “Perfil do usuário”. |
-  |3| Clicar em “Listar serviços ofertados”. | Apresentar lista de serviços ofertados referentes a esse usuário. |
-  |4| Clicar em “Adicionar serviço”. | Apresentar formulário para preenchimento dos dados. |
-  |5| Digitar os dados e clicar em “Salvar”. | Salvar os dados no banco de dados. |
-  |6|  | Retornar para a lista de serviços ofertados. |
-  |7|  | Apresentar mensagem de “Serviço adicionado com sucesso.”. |
+  |2| Clicar em “Eventos”. | Apresentar tela com a sessão“Eventos”. |
+  |3| Clicar em “Criar evento”. | Apresentar formulário para preenchimento dos dados do evento. |
+  |4| Digitar os dados e clicar em “Criar”. | Salvar os dados no banco de dados. |
+  |5|  | Retornar para a tela com a sessão “Eventos”. |
+  |6|  | Apresentar mensagem de “Evento criado com sucesso”. |
+  
 
-  | FLUXO ALTERNATIVO – CANCELAR CADASTRO DE SERVIÇO |
+  | FLUXO ALTERNATIVO – CANCELAR CRIAÇÃO DE EVENTO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
   |1| Efetuar login no sistema. | Validar dados de login. |
-  |2| Clicar em “Perfil do usuário”. | Apresentar tela de “Perfil do usuário”. |
-  |3| Clicar em “Listar serviços ofertados”. | Apresentar lista de serviços ofertados referentes a esse usuário. |
-  |4| Clicar em “Adicionar serviço”. | Apresentar formulário para preenchimento dos dados. |
-  |5| Digitar os dados e clicar em “Cancelar”. | Retornar para a lista de serviços ofertados. |
-
+  |2| Clicar em “Eventos”. | Apresentar tela com a sessão “Eventos”. |
+  |3| Clicar em “Criar evento”. | Apresentar formulário para preenchimento dos dados do evento. |
+  |4| Digitar os dados e clicar em “Cancelar”. | Retornar para a tela com a sessão “Eventos”. |
+  
+  #PAREIAQUI
 
   | Fluxo Basíco 2 – LISTAR SERVIÇOS |
   | ----------- |
