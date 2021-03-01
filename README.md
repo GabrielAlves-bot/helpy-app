@@ -125,13 +125,13 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
-  | Nome do caso de uso: | CADASTRAR VOLUNTARIO |
-  | ----------- | ----------- |
-  | Ator Principal: | Voluntário |
-  | Atores Secundários:| |
-  | Descrição: | Este caso de uso permite ao ator, se cadastrar no sistema.. |
+  | Nome do caso de uso: | CADASTRAR VOLUNTARIO                             |
+  | ----------- | -----------                                               |
+  | Ator Principal: | Voluntário                                            |
+  | Atores Secundários:|                                                    |
+  | Descrição: | Este caso de uso permite ao ator, se cadastrar no sistema. |
   | Pré-condições: | O voluntário deve ter acesso a pagina inicial do sistema. |
-  | Pós-condições: | Voluntário cadastrado no sistema. |
+  | Pós-condições: | Voluntário cadastrado no sistema.                      |
 
   | Fluxo Basíco |
   | ----------- |
