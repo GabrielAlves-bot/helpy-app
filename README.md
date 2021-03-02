@@ -125,19 +125,11 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
-<<<<<<< HEAD
   | Nome do caso de uso: | CADASTRAR VOLUNTARIO |
   | ------------ | ----------- |
   | Ator Principal: | Voluntário |
   | Atores Secundários:| |
   | Descrição:| Este caso de uso permite ao ator, se cadastrar no sistema. |
-=======
-  | Nome do caso de uso: | CADASTRAR VOLUNTARIO                             |
-  | ----------- | -----------                                               |
-  | Ator Principal: |Voluntário|
-  | Atores Secundários:|                                                    |
-  | Descrição: | Este caso de uso permite ao ator, se cadastrar no sistema. |
->>>>>>> e48d49c0d8705c6000484cc2daa230950e209230
   | Pré-condições: | O voluntário deve ter acesso a pagina inicial do sistema. |
   | Pós-condições: | Voluntário cadastrado no sistema. |
 
@@ -339,8 +331,8 @@ produto e entrega aos necessitados.
   |1| O ator aciona “Mostrar Estoque do evento”. |  |
   |2|  | O sistema exibe a área de estoque. |
   |3| O ator aciona o botão “Adicionar mantimentos”. |  |
-  |4|  | O sistema exibe o formulário para o cliente. |
-  |5| O cliente preenche todos os campos do formulário. |  |
+  |4|  | O sistema exibe o formulário para o ator . |
+  |5| O ator preenche todos os campos do formulário. |  |
   |6| O cliente aciona o botão “Enviar Proposta”. |  |
   |7| O cliente preenche todos os campos do formulário. | O sistema envia uma mensagem de confirmação “Você deseja enviar essa proposta”. |
   |8| O cliente aciona a opção “Sim”. |  |
