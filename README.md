@@ -333,115 +333,84 @@ produto e entrega aos necessitados.
   |3| O ator aciona o botão “Adicionar mantimentos”. |  |
   |4|  | O sistema exibe o formulário para o ator . |
   |5| O ator preenche todos os campos do formulário. |  |
-  |6| O cliente aciona o botão “Enviar Proposta”. |  |
-  |7| O cliente preenche todos os campos do formulário. | O sistema envia uma mensagem de confirmação “Você deseja enviar essa proposta”. |
-  |8| O cliente aciona a opção “Sim”. |  |
-  |9|  | O sistema valida os dados preenchidos anteriormente pelo cliente. |
-  |10|  | Caso exista algum campo em branco o sistema exibe uma mensagem “Campos obrigatórios não preenchidos” |
+  |6| O ator aciona o botão “Adicionar mantimentos”. |  |
+  |7|  | O sistema envia uma mensagem de confirmação “Você deseja incluir esses mantimentos?” |
+  |8| O ator aciona a opção “Sim”. |  |
+  |9|  | O sistema valida os dados preenchidos anteriormente pelo ator . |
+  |10|  | Caso exista algum campo em branco o sistema exibe uma mensagem “Campos obrigatórios não preenchidos”. |
   |11|  | O sistema exibe novamente o formulário junto com a mensagem. |
-  |12| O cliente preenche os dados que estão faltando e envia novamente o formulário. |  |
-  |13|  | O sistema valida os dados preenchidos anteriormente pelo cliente. |
-  |14|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema com o status “Proposta em analise”<RN 3.1.1>. |
-  |15|  | O sistema exibe a mensagem para o cliente “Proposta Criada com sucesso” |
-  |16|  | O sistema encaminha o cliente para página principal do aplicativo. |
+  |12| O ator preenche os dados que estão faltando e envia novamente o formulário. |  |
+  |13|  | O sistema valida os dados preenchidos anteriormente pelo ator . |
+  |14|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema. |
+  |15|  | O sistema exibe a mensagem para o ator “Mantimentos adicionados com sucesso”. |
+  |16|  | O sistema encaminha o ator para página de listagem de mantimentos. |
 
   | CDU-02 |
   | ----------- |
 
-  | Nome do caso de uso: | CANCELAR PROPOSTA |
+  | Nome do caso de uso: | RETIRAR MANTIMENTOS |
   | ----------- | ----------- |
-  | Ator Principal: | Cliente |
+  | Ator Principal: | Voluntário, organizador |
   | Atores Secundários:| |
-  | Descrição: | Cancelar Proposta criada anteriormente pelo cliente. |
-  | Pré-condições: | O Freelancer não deve ter aceitado a proposta ainda. |
-  | Pós-condições: | O cancelamento da proposta de serviço. |
+  | Descrição: | A Retirada mantimentos do estoque do evento |
+  | Pré-condições: | O ator deve estar logado e na página de estoque |
+  | Pós-condições: | O êxito na retirada dos mantimentos. |
 
   | Fluxo Basíco |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| O cliente aciona a barra lateral do aplicativo “Listar Propostas”. |  |
-  |2|  | O sistema exibe todas as propostas criadas por esse cliente. |
-  |3| O cliente escolhe a proposta que deseja cancelar. |  |
-  |4|  | O sistema exibe somente a proposta selecionada. |
-  |5|  | O sistema exibe a mensagem “Deseja realmente cancelar a proposta”. |
-  |6| O cliente aciona o botão “Sim”. |  |
-  |7|  | O sistema exibe „Proposta cancelada com sucesso”. |
-  |8|  | O sistema troca o status da proposta como “Proposta cancelada”.<RN 3.1.1> |
-  |9|  | O sistema retorna a página inicial do aplicativo. |
+  |1| O ator aciona Listagem de mantimentos. |  |
+  |2|  | O sistema exibe a lista de mantimentos que estão cadastrados no sistema . |
+  |3| O ator aciona o botão "Retirar mantimentos". |  |
+  |4|  | O sistema exibe um formulário de seleção. |
+  |5|  | O ator seleciona os mantimentos que deseja retirar. |
+  |6| O ator aciona o botão “Realizar retirada” . |  |
+  |7|  | O sistema exibe ‘você deseja realmente quer retirar esses mantimentos?”. |
+  |8| O ator aciona “Sim”.  | |
+  |9|  | O sistema faz a alteração no banco de dados. |
+  |10|  | O sistema exibe uma mensagem “Mantimentos retirados com sucesso”. |
+  |11| O sistema encaminha o ator para página de listagem de mantimentos. |
 
-  | Fluxo alternativo 1 – Negar cancelamento de proposta |
+  | Fluxo alternativo 1 – Cancelar retirada de mantimentos |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| O cliente aciona a barra lateral do aplicativo “Listar Propostas.” |  |
-  |2|  | O sistema exibe todas as propostas criadas por esse cliente. |
-  |3| O cliente escolhe a proposta que deseja cancelar. |  |
-  |4|  | O sistema exibe somente a proposta selecionada. |
-  |5|  | O sistema exibe a mensagem “Deseja realmente cancelar essa proposta.” |
-  |6| O cliente aciona o botão “Não”. |  |
-  |7|  | O sistema retorna a página inicial do aplicativo. |
+  |1| O ator aciona Listagem de mantimentos. |  |
+  |2|  | O sistema exibe a lista de mantimentos que estão cadastrados no sistema. |
+  |3| O ator aciona o botão “Retirar mantimentos”. |  |
+  |4|  | O sistema exibe um formulário de seleção. |
+  |5| O ator seleciona os mantimentos que deseja retirar. |  |
+  |6| O ator aciona o botão “Realizar retirada” . |  |
+  |7|  | O sistema exibe ‘você deseja realmente quer retirar esses mantimentos?”. |
+  |8| O ator aciona “Não” . |  |
+  |9|  | O sistema encaminha o organizador para página de listagem de mantimentos. |
 
   | CDU-03 |
   | ----------- |
 
-  | Nome do caso de uso: | LISTAR PROPOSTA |
+  | Nome do caso de uso: | LISTAR MANTIMENTOS |
   | ----------- | ----------- |
-  | Ator Principal: | Cliente,Freelancer |
+  | Ator Principal: | Voluntario,Organizador |
   | Atores Secundários:| |
-  | Descrição: | Listagem das propostas. |
-  | Pré-condições: | O Ator deve estar logado no sistema. |
-  | Pós-condições: | Apresentação das propostas de serviço. |
+  | Descrição: | Listagem dos mantimentos cadastrados no sistema. |
+  | Pré-condições: | O Ator deve estar logado no sistema e na aba do evento. |
+  | Pós-condições: | Apresentação de todos os mantimentos que estão no estoque do evento. |
 
   | Fluxo Basíco |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| O ator aciona na barra lateral do aplicativo. |  |
-  |2|  | O sistema exibe todas as opções da barra lateral. |
-  |3| O ator aciona “Listagem de todas as propostas.” |  |
-  |4|  | O sistema exibe todas as opções disponíveis. |
+  |1| O ator aciona “Mostrar mantimentos do evento” |  |
+  |2|  | O sistema exibe todos os mantimentos cadastrados posteriormente |
+  |3| O ator visualiza os mantimentos disponíveis. |  |
+  |4| O ator aciona “fechar janela” |  |
+  |5| | O sistema encaminha o ator para a página principal do evento.  |
 
-  | CDU-04 |
-  | ----------- |
-
-  | Nome do caso de uso: | ESCOLHAER PROPOSTA |
-  | ----------- | ----------- |
-  | Ator Principal: | Freelancer |
-  | Atores Secundários:| |
-  | Descrição: | Será a decisão do freelancer se ele aceita ou rejeita a proposta do cliente. |
-  | Pré-condições: | O freelancer deve estar logado no sistema e possuir pelo menos 1 proposta de serviço. |
-  | Pós-condições: | O freelancer deve receber todas as informações necessárias para a prestação do serviço junto com o status de “Proposta Aceita”. |
-
-  | FLUXO BÁSICO-ACEITAR PROPOSTA |
-  | ----------- |
-
-  | | Ações do Ator | Principal: Usuário Ações do Sistema: |
-  | ----------- | ----------- | ----------- |
-  |1| O freelancer aciona na barra lateral a listagem de propostas. |  |
-  |2|  | O sistema exibe todas as propostas disponíveis para aquele freelancer. |
-  |3| O freelancer seleciona uma proposta |  |
-  |4|  | O sistema exibe detalhes dessa proposta de serviço. |
-  |5|  | O sistema exibe uma mensagem “Deseja realmente escolher essa proposta de serviço”. |
-  |6| O freelancer aciona “Sim”. |  |
-  |7|  | O sistema exibe todas as informações necessárias para que se possa realizar o serviço. |
-  |8|  | O sistema muda o status do serviço para “Proposta aceita”. |
-
-  | FLUXO ALTERNATIVO – RECUSAR PROPOSTA |
-  | ----------- |
-
-  | | Ações do Ator | Principal: Usuário Ações do Sistema: |
-  | ----------- | ----------- | ----------- |
-  |1| O freelancer aciona na barra lateral a listagem de propostas. |  |
-  |2|  | O sistema exibe todas as propostas disponíveis para aquele freelancer. |
-  |3| O freelancer seleciona uma proposta. |  |
-  |4|  | O sistema exibe detalhes dessa proposta de serviço. |
-  |5|  | O sistema exibe uma mensagem “Deseja realmente escolher essa proposta de serviço”. |
-  |6| O freelancer aciona “Não”. |  |
-  |7|  | O sistema retorna o freelancer para aba de listagem de propostas. |
+ 
   
 #### 4. Caso de uso Interagir via chat – Luiz Fernando
 
