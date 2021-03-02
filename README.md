@@ -125,13 +125,21 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
+<<<<<<< HEAD
+  | Nome do caso de uso: | CADASTRAR VOLUNTARIO |
+  | ------------ | ----------- |
+  | Ator Principal: | Voluntário |
+  | Atores Secundários:| |
+  | Descrição:| Este caso de uso permite ao ator, se cadastrar no sistema. |
+=======
   | Nome do caso de uso: | CADASTRAR VOLUNTARIO                             |
   | ----------- | -----------                                               |
   | Ator Principal: |Voluntário|
   | Atores Secundários:|                                                    |
   | Descrição: | Este caso de uso permite ao ator, se cadastrar no sistema. |
+>>>>>>> e48d49c0d8705c6000484cc2daa230950e209230
   | Pré-condições: | O voluntário deve ter acesso a pagina inicial do sistema. |
-  | Pós-condições: | Voluntário cadastrado no sistema.                      |
+  | Pós-condições: | Voluntário cadastrado no sistema. |
 
   | Fluxo Basíco |
   | ----------- |
@@ -229,56 +237,67 @@ produto e entrega aos necessitados.
   |3| Clicar em “Criar evento”. | Apresentar formulário para preenchimento dos dados do evento. |
   |4| Digitar os dados e clicar em “Cancelar”. | Retornar para a tela com a sessão “Eventos”. |
   
-  #PAREIAQUI
 
-  | Fluxo Basíco 2 – LISTAR SERVIÇOS |
+
+  | Fluxo Basíco 2 – LISTAR EVENTO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
   |1| Efetuar login no sistema. | Validar dados de login. |
-  |2| Clicar em “Perfil do usuário”. | Apresentar tela de “Perfil do usuário”. |
-  |3| Clicar em “Listar serviços ofertados”. | Apresentar lista de serviços ofertados referentes a esse usuário. |
+  |2| Clicar em “Eventos”. | Apresentar tela com a sessão“Eventos” |
+  |3| Pesquisar código do evento ou rolar a página para visualizar todos os eventos. | Apresentar lista de eventos criados ou evento específico de acordo com o código digitado. |
 
 
-  | Fluxo básico 3 – ATUALIZAR SERVIÇOS|
+  | Fluxo básico 3 – ATUALIZAR EVENTO|
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
   |1| Efetuar login no sistema. | Validar dados de login. |
-  |2| Clicar em “Perfil do usuário”. | Apresentar tela de “Perfil do usuário”. |
-  |3| Clicar em “Listar serviços ofertados”. | Apresentar lista de serviços ofertados referentes a esse usuário. |
-  |4| Selecionar o serviço que deseja atualizar e clicar em “Atualizar”. | Apresentar formulário para preenchimento dos dados. |
-  |5| Digitar os dados e clicar em “Atualizar”. | Salvar os dados no banco de dados. |
-  |6|  | Retornar para a lista de serviços ofertados. |
-  |7|  | Apresentar mensagem de “Serviço atualizado com sucesso.”. |
+  |2| Clicar em “Eventos”. | Apresentar tela com a sessão“Eventos”. |
+  |3| Pesquisar código do evento ou rolar a página para visualizar todos os eventos. | Apresentar lista de eventos criados ou evento específico de acordo com o código digitado. |
+  |4| Encontrar o evento desejado e clicar em “Atualizar”. |Apresentar formulário para atualização dos dados do evento. |
+  |5| Digitar os dados e clicar em “Salvar”. | Salvar os dados no banco de dados. |
+  |6|  | Retornar para a tela com a sessão “Eventos”. |
+  |7|  | Apresentar mensagem de “Evento atualizado com sucesso.” |
 
-
-  | Fluxo básico 4 – EXCLUIR SERVIÇO |
+  | FLUXO ALTERNATIVO  – CANCELAR ATUALIZAÇÃO DE EVENTO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
   |1| Efetuar login no sistema. | Validar dados de login. |
-  |2| Clicar em “Perfil do usuário”. | Apresentar tela de “Perfil do usuário”. |
-  |3| Clicar em “Listar serviços ofertados”. | Apresentar lista de serviços ofertados referentes a esse usuário. |
-  |4| Selecionar o serviço que deseja atualizar e clicar em “Excluir”. | Apresentar mensagem de confirmação. |
+  |2| Clicar em “Eventos”. | Apresentar tela com a sessão “Eventos”. |
+  |3| Pesquisar código do evento ou rolar a página para visualizar todos os eventos | Apresentar lista de eventos criados ou evento específico de acordo com o código digitado. |
+  |4| Encontrar o evento desejado e clicar em “Atualizar”. | Apresentar formulário para atualização dos dados do evento. |
+  |5| Digitar os dados e clicar em “Cancelar”. | Retornar para a tela com a sessão “Eventos”. |
+
+
+  | Fluxo básico 4 – EXCLUIR EVENTO |
+  | ----------- |
+
+  | | Ações do Ator | Principal: Usuário Ações do Sistema: |
+  | ----------- | ----------- | ----------- |
+  |1| Efetuar login no sistema. | Validar dados de login. |
+  |2| Clicar em “Eventos”. | Apresentar tela com a sessão“Eventos”. |
+  |3| Pesquisar código do evento ou rolar a página para visualizar todos os eventos. | Apresentar lista de eventos criados ou evento específico de acordo com o código digitado. |
+  |4| Encontrar o evento desejado e clicar em “Excluir”. | Apresentar mensagem de confirmação de exclusão. |
   |5| Clicar em “Excluir”. | Excluir os dados do banco de dados. |
-  |6|  | Retornar para a lista de serviços ofertados. |
-  |7|  | Apresentar mensagem de “Serviço excluído com sucesso.”. |
+  |6|  | Retornar para a tela com a sessão “Eventos”. |
+  |7|  | Apresentar mensagem de “Evento excluído com sucesso.” |
 
 
-  | FLUXO ALTERNATIVO 4 – CANCELAR EXCLUSÃO |
+  | FLUXO ALTERNATIVO  – CANCELAR EXCLUSÃO DE EVENTO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
   |1| Efetuar login no sistema. | Validar dados de login. |
-  |2| Clicar em “Perfil do usuário”. | Apresentar tela de “Perfil do usuário”. |
-  |3| Clicar em “Listar serviços ofertados”. | Apresentar lista de serviços ofertados referentes a esse usuário. |
-  |4| Selecionar o serviço que deseja atualizar e clicar em “Excluir”. | Apresentar mensagem de confirmação. |
-  |5| Clicar em “Cancelar”. | Retornar para a lista de serviços ofertados. |
+  |2| Clicar em “Eventos”. | Apresentar tela com a sessão “Eventos”. |
+  |3| Pesquisar código do evento ou rolar a página para visualizar todos os eventos | Apresentar lista de eventos criados ou evento específico de acordo com o código digitado. |
+  |4| Encontrar o evento desejado e clicar em “Excluir”. | Apresentar mensagem de confirmação de exclusão. |
+  |5| Clicar em “Cancelar”. | Retornar para a tela com a sessão “Eventos” |
 
 #### 3. Caso de uso Manter proposta – Gabriel Alves
 
@@ -286,40 +305,40 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
-  | Nome do caso de uso: | CRIAR PROPOSTA |
+  | Nome do caso de uso: | INCLUIR MANTIMENTOS |
   | ----------- | ----------- |
-  | Ator Principal: | Cliente |
+  | Ator Principal: | Voluntário, organizador |
   | Atores Secundários:|  |
-  | Descrição: | O cliente cria uma proposta de serviço para o Freelancer contendo informações do serviço a ser prestado. |
-  | Pré-condições: | O cliente deverá está cadastrado e se encontrar na página de serviço que deseja ofertar. |
-  | Pós-condições: | O êxito na criação da proposta. |
+  | Descrição: | O ator adiciona todos os mantimentos arrecadados pelo evento no sistema. |
+  | Pré-condições: | O ator deve estar logado no sistema, e na página de estoque do evento |
+  | Pós-condições: | O êxito na inclusão do mantimento no sistema. |
 
   | Fluxo Basíco |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| O cliente aciona a barra lateral do aplicativo “Listar serviços ofertados” | Validar dados de login. |
-  |2|  | O sistema Lista os serviços ofertados. |
-  |3| O cliente seleciona o serviço desejável e aciona o botão “Criar Proposta”. | Apresentar lista de serviços ofertados referentes a esse usuário. |
-  |4|  | O sistema exibe o formulário para o cliente. |
-  |5| O cliente preenche todos os campos do formulário. | Salvar os dados no banco de dados. |
-  |6| O cliente aciona o botão “Enviar Proposta”. |  |
-  |7|  | O sistema envia uma mensagem de confirmação “Você deseja enviar essa proposta”. |
-  |8| O cliente aciona a opção “Sim”. |  |
-  |9|  | O sistema valida os dados preenchidos anteriormente pelo cliente. |
-  |10|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema com o status “Proposta em analise”<RN 3.1.1>. |
-  |11|  | O sistema exibe a mensagem para o cliente “Proposta Criada com sucesso”. |
-  |12|  | O sistema encaminha o cliente para página principal do aplicativo. |
+  |1| O ator aciona “Mostrar Estoque do evento” |  |
+  |2|  | O sistema exibe a área de estoque. |
+  |3| O ator aciona o botão “Adicionar mantimentos” | |
+  |4|  | O sistema exibe o formulário para o ator . |
+  |5| O ator preenche todos os campos do formulário. |  |
+  |6| O ator aciona o botão “Adicionar mantimentos”. |  |
+  |7|  | O sistema envia uma mensagem de confirmação “Você deseja incluir esses mantimentos?” |
+  |8| O ator aciona a opção “Sim” |  |
+  |9|  | O sistema valida os dados preenchidos anteriormente pelo ator . |
+  |10|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema. |
+  |11|  | O sistema exibe a mensagem para o ator “Mantimentos adicionados com sucesso”|
+  |12|  | O sistema encaminha o ator para página de listagem de mantimentos. |
 
-  | Fluxo alternativo 1 – REENVIAR PROPOSTA |
+  | Fluxo alternativo 1 – REENVIAR INCLUIR MANTIMENTOS |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| O cliente aciona a barra lateral do aplicativo “Listar serviços ofertados”. |  |
-  |2|  | O sistema Lista os serviços ofertados. |
-  |3| O cliente seleciona o serviço desejável e aciona o botão “Criar Proposta”. |  |
+  |1| O ator aciona “Mostrar Estoque do evento”. |  |
+  |2|  | O sistema exibe a área de estoque. |
+  |3| O ator aciona o botão “Adicionar mantimentos”. |  |
   |4|  | O sistema exibe o formulário para o cliente. |
   |5| O cliente preenche todos os campos do formulário. |  |
   |6| O cliente aciona o botão “Enviar Proposta”. |  |
