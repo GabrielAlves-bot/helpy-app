@@ -241,7 +241,7 @@ produto e entrega aos necessitados.
   |3| Pesquisar código do evento ou rolar a página para visualizar todos os eventos. | Apresentar lista de eventos criados ou evento específico de acordo com o código digitado. |
 
 
-  | Fluxo básico 3 – ATUALIZAR EVENTO|
+  | Fluxo Básico 3 – ATUALIZAR EVENTO|
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -492,26 +492,26 @@ produto e entrega aos necessitados.
   | CDU-04 |
   | ----------- |
 
-  | Nome do caso de uso: | ATUALIZAR CADASTRO |
+  | Nome do caso de uso: | EXCLUIR FAMÍLIA |
   | ----------- | ----------- |
   | Ator Principal: | Família |
   | Atores Secundários:| Voluntários |
-  | Descrição: | Alteração dos dados feito no ato do cadastro. |
+  | Descrição: | Excluir o cadastro no sistema. |
   | Pré-condições: | A família ou voluntário deve estar logado no sistema com a chave de acesso que foi fornecida anteriormente. |
-  | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro atualizado com sucesso. |
+  | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro excluído com sucesso. |
 
   | FLUXO BÁSICO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| A família ou voluntário acessa a página de cadastro.  |  |
-  |2|  A família ou voluntário clica no botão em fazer login.  | O sistema solicita a chave de acesso.  |
-  |3|  | O sistema exibe o formulário para a família ou voluntário. |
-  |4| A família ou voluntário clica em atualizar o formulário de cadastro das famílias.  |  |
-  |5| Detalhar alguma necessidade especial, caso exista.  | O sistema exibe um campo para detalhar alguma necessidade especial. |
-  |6| A família ou voluntário clica no botão enviar. | O sistema valida os dados preenchidos anteriormente pela a família ou voluntário. |
-  |7|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema. |
+  |1| A família ou voluntário acessa a página de login.  |  |
+  |2|  A família ou voluntário clica no botão em fazer login. | O sistema solicita a chave de acesso.  |
+  |3|  | O sistema exibe a opção “excluir cadastro” para a família ou voluntário. |
+  |4| A família ou voluntário clica em excluir cadastro.  |  |
+  |5| A família ou voluntário confirma. | |
+  |6|  | O sistema exibe uma mensagem: Tem certeza que deseja excluir o cadastro? |
+  |7|  | O sistema exibe uma mensagem: Cadastro excluído! |
   |8|  | O sistema volta para a página inicial. |
 
 
@@ -522,52 +522,100 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
-  | Nome do caso de uso: | EFETUAR PAGAMENTO ONLINE |
+  | Nome do caso de uso: | INCLUIR PARCERIA |
   | ----------- | ----------- |
-  | Ator Principal: | Cliente |
-  | Atores Secundários:| Freelancer |
-  | Descrição: | Cliente faz o cadastro e efetua o pagamento o serviço ele faz o pré-pagamento e assim que o serviço é executado, o cliente libera o pagamento para o Freelancer. |
-  | Pré-condições: | O cliente deve ter o aplicativo baixado e se cadastrado na plataforma. |
-  | Pós-condições: | O aplicativo deve ter cadastrado o cliente e as formas de pagamento. |
+  | Ator Principal: | Organizador |
+  | Atores Secundários:|  |
+  | Descrição: | O organizador do evento adiciona uma empresa que deseja fazer uma parceria patrocinando um evento. |
+  | Pré-condições: | O organizador deve estar logado no sistema na aba para adicionar parceria. |
+  | Pós-condições: | O êxito na inclusão do parceiro no sistema. |
 
-  | FLUXO BÁSICO – EFETUAR PAGAMENTO |
+  | FLUXO BÁSICO – Incluir Parceria |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| Cliente abre o aplicativo. | Notificar se a mensagem foi recebida. |
-  |2| Faz login no sistema. | Autoriza a entrada. |
-  |3| Seleciona a aba de pagamento. |  |
-  |4| Escolhe a forma de pagamento. | Mostra opções para pagamento. |
-  |5| Insere o valor desejado. | Mostra valor digitado. |
-  |6| Efetua o pagamento. | Mostra recibo do pagamento. |
+  |1|  | O sistema exibe a área de parceria. |
+  |2| O organizador aciona o botão “Adicionar parceiros”. | Autoriza a entrada. |
+  |3|  | O sistema exibe o formulário para o organizador. |
+  |4| O organizador preenche todos os campos do formulário. |  |
+  |5| O cliente aciona o botão “Adicionar parceiros”. | Mostra valor digitado. |
+  |6|  | O sistema envia uma mensagem de confirmação “Você deseja incluir esse parceiro/patrocinador?” |
+  |7| O Organizador aciona a opção “Sim”. | |
+  |8|  | O sistema valida os dados preenchidos anteriormente pelo Organizador. |
+  |9|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema |
+  |10|  | O sistema exibe a mensagem para o cliente “Parceiro adicionado com exito”. |
+  |11|  | O sistema encaminha o Organizador para página inicial do evento. |
 
-  | FLUXO ALTERNATIVO – ERRO DE LOGIN |
+  | FLUXO ALTERNATIVO – – Empresa Já Cadastrada |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| Cliente abre o aplicativo. |  |
-  |2| Faz login. | Caso login esteja errado, solicita novamente. |
-  |3| Seleciona aba de pagamento. |  |
-  |4| Escolhe forma de pagamento. | Mostra opções para pagamento. |
-  |5| Insere valor desejado. | Mostra valor digitado. |
-  |6| Altera valor. | Mostra novo valor digitado. |
-  |7| Efetua pagamento. | Mostra recibo de pagamento. |
+  |1| | O sistema exibe a área de parceiros.  |
+  |2| O organizador aciona o botão “Adicionar parceria”. | Caso login esteja errado, solicita novamente. |
+  |3|  | O sistema exibe o formulário para o organizador.|
+  |4| O organizador preenche todos os campos do formulário. |  |
+  |5| O cliente aciona o botão “Adicionar parceiro”. | |
+  |6|  | O sistema envia uma mensagem de confirmação “Você deseja adicionar esse parceiro?”. |
+  |7| O Organizador aciona a opção “Sim”. |  |
+  |8|  | O sistema valida os dados preenchidos anteriormente pelo Organizador. |
+  |9|  | Caso exista algum campo em branco o sistema exibe uma mensagem “Campos obrigatórios não preenchidos”. |
+  |10|  | O sistema exibe novamente o formulário junto com a mensagem. |
+  |11| O Organizador preenche os dados que estão faltando e envia novamente o formulário.  |  |
+  |12|  | O sistema valida os dados preenchidos anteriormente pelo Organizador. |
+  |13|  | O sistema exibe uma mensagem: “Parceiro já cadastrado!”. |
+  |14|  | O sistema encaminha o organizador para página principal do evento. |
 
-  | FLUXO ALTERNATIVO – EDITAR FORMA DE PAGAMENTO |
+  | CDU-02 |
+  | ----------- |
+
+  | Nome do caso de uso: | EXCLUIR PARCERIA |
+  | ----------- | ----------- |
+  | Ator Principal: | Organizador |
+  | Atores Secundários:|  |
+  | Descrição: | Excluir um parceiro que não queira mais fazer parte de eventos. |
+  | Pré-condições: | O organizador deve estar logado e na página de parceria. |
+  | Pós-condições: | O êxito na exclusão do parceiro. |
+
+  | FLUXO BÁSICO – Incluir Parceria |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| Abre o aplicativo. |  |
-  |2| Faz login no sistema. | Autoriza a entrada. |
-  |3| Seleciona aba de pagamento. |  |
-  |4| Escolhe forma de pagamento. | Mostra opções de pagamento. |
-  |5| Insere valor desejado. | Mostra valor digitado. |
-  |6| Altera forma de pagamento.| Mostra nova forma de pagamento. |
-  |7| Insere novamente o valor desejado. | Mostra valor digitado. |
-  |8| Efetua pagamento. | Mostra recibo de pagamento. |
+  |1|  | O sistema exibe a lista de parceiros que estão cadastrados no sistema. |
+  |2| O Organizador aciona o botão “excluir parceiro”. |  |
+  |3|  | O sistema exibe um formulário de seleção. |
+  |4| O Organizadorseleciona o parceiro que deseja excluir. |  |
+  |5| O Organizador aciona o botão “Excluir parceiro”. |  |
+  |6|  | O sistema exibe ‘você deseja realmente excluir esse parceiro? |
+  |7| O Organizador aciona a opção “Sim”. | |
+  |8|  | O sistema faz a alteração no banco de dados. |
+  |9|  | O sistema exibe uma mensagem “Parceiro excluído com sucesso”. |
+  |10|  | O sistema encaminha o organizador para página principal do evento. |
+  
+#PAREI AQUI
+  | FLUXO ALTERNATIVO – – Excluir Parceiro Errado. |
+  | ----------- |
+
+  | | Ações do Ator | Principal: Usuário Ações do Sistema: |
+  | ----------- | ----------- | ----------- |
+  |1| | O sistema exibe a área de parceiros.  |
+  |2| O organizador aciona o botão “Adicionar parceria”. | Caso login esteja errado, solicita novamente. |
+  |3|  | O sistema exibe o formulário para o organizador.|
+  |4| O organizador preenche todos os campos do formulário. |  |
+  |5| O cliente aciona o botão “Adicionar parceiro”. | |
+  |6|  | O sistema envia uma mensagem de confirmação “Você deseja adicionar esse parceiro?”. |
+  |7| O Organizador aciona a opção “Sim”. |  |
+  |8|  | O sistema valida os dados preenchidos anteriormente pelo Organizador. |
+  |9|  | Caso exista algum campo em branco o sistema exibe uma mensagem “Campos obrigatórios não preenchidos”. |
+  |10|  | O sistema exibe novamente o formulário junto com a mensagem. |
+  |11| O Organizador preenche os dados que estão faltando e envia novamente o formulário.  |  |
+  |12|  | O sistema valida os dados preenchidos anteriormente pelo Organizador. |
+  |13|  | O sistema exibe uma mensagem: “Parceiro já cadastrado!”. |
+  |14|  | O sistema encaminha o organizador para página principal do evento. |
+
+  
 
 ## Lista de regras de negócio
 
