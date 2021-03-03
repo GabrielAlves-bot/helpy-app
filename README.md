@@ -28,21 +28,19 @@
 
     6.2. [Especificação de casos de uso](#2-especificação-de-casos-de-uso)
 
-      6.2.1. [Caso de uso Manter Usuario – Mateus Pereira](#1-caso-de-uso-manter-usuario--mateus-pereira)
+      6.2.1. [Caso de uso Manter Usuario – Mateus Pereira](#1-caso-de-uso-manter-voluntario--mateus-pereira)
           
-      6.2.2. [Caso de uso Manter Serviço Ofertado – Ruan Lucas](#2-caso-de-uso-manter-serviço-ofertado--ruan-lucas)
+      6.2.2. [Caso de uso Manter Serviço Ofertado – Ruan Lucas](#2-caso-de-uso-manter-evento--ruan-lucas)
           
-      6.2.3. [Caso de uso Manter proposta – Gabriel Alves](#3-caso-de-uso-manter-proposta--gabriel-alves)
+      6.2.3. [Caso de uso Manter proposta – Gabriel Alves](#3-caso-de-uso-manter-mantimentos--gabriel-alves)
           
-      6.2.4. [Caso de uso Interagir via chat – Luiz Fernando](#4-caso-de-uso-interagir-via-chat--luiz-fernando)
+      6.2.4. [Caso de uso Interagir via chat – Luiz Fernando](#4-caso-de-uso-manter-família--luiz-fernando)
           
-      6.2.5. [Caso de uso Efetuar pagamento on line – Raniery Azevedo](#5-caso-de-uso-efetuar-pagamento-on-line--raniery-azevedo)
+      6.2.5. [Caso de uso Efetuar pagamento on line – Raniery Azevedo](#5-caso-de-uso-manter-parceria--raniery-azevedo)
 
 7. [Lista de regras de negócio](#lista-de-regras-de-negócio)
    
-8. [Lista de requisitos não funcionais](#lista-de-requisitos-não-funcionais)
-   
-9.  [Wireframe](#wireframe)
+8.  [Wireframe](#wireframe)
 
 ## Introdução
 
@@ -120,7 +118,7 @@ produto e entrega aos necessitados.
 
 ### 2. Especificação de casos de uso
 
-#### 1. Caso de uso Manter Usuario – Mateus Pereira
+#### 1. Caso de uso Manter Voluntario – Mateus Pereira
 
   | CDU-01 |
   | ----------- |
@@ -133,7 +131,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | O voluntário deve ter acesso a pagina inicial do sistema. |
   | Pós-condições: | Voluntário cadastrado no sistema. |
 
-  | Fluxo Basíco |
+  | Fluxo Basíco - CADASTRAR VOLUNTARIO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -158,7 +156,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | O voluntário deve estar autenticado no sistema. |
   | Pós-condições: | Consulta, edição ou exclusão do perfil. |
 
-  | Fluxo Basíco |
+  | Fluxo Basíco - VISUALIZAR VOLUNTARIO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -192,7 +190,7 @@ produto e entrega aos necessitados.
   |7| |O caso de uso é encerrado.|
 
 
-#### 2. Caso de uso Manter Serviço Ofertado – Ruan Lucas
+#### 2. Caso de uso Manter Evento – Ruan Lucas
 
 
   | CDU-01 |
@@ -291,7 +289,7 @@ produto e entrega aos necessitados.
   |4| Encontrar o evento desejado e clicar em “Excluir”. | Apresentar mensagem de confirmação de exclusão. |
   |5| Clicar em “Cancelar”. | Retornar para a tela com a sessão “Eventos” |
 
-#### 3. Caso de uso Manter proposta – Gabriel Alves
+#### 3. Caso de uso Manter Mantimentos – Gabriel Alves
 
 
   | CDU-01 |
@@ -305,7 +303,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | O ator deve estar logado no sistema, e na página de estoque do evento |
   | Pós-condições: | O êxito na inclusão do mantimento no sistema. |
 
-  | Fluxo Basíco |
+  | Fluxo Basíco - INCLUIR MANTIMENTOS |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -356,7 +354,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | O ator deve estar logado e na página de estoque |
   | Pós-condições: | O êxito na retirada dos mantimentos. |
 
-  | Fluxo Basíco |
+  | Fluxo Basíco - RETIRAR MANTIMENTOS |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -399,7 +397,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | O Ator deve estar logado no sistema e na aba do evento. |
   | Pós-condições: | Apresentação de todos os mantimentos que estão no estoque do evento. |
 
-  | Fluxo Basíco |
+  | Fluxo Basíco - LISTAR MANTIMENTOS |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -412,7 +410,7 @@ produto e entrega aos necessitados.
 
  
   
-#### 4. Caso de uso Interagir via chat – Luiz Fernando
+#### 4. Caso de uso Manter Família – Luiz Fernando
 
   | CDU-01 |
   | ----------- |
@@ -425,7 +423,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | A família ou voluntário deve acessar o sistema, especificamente na página de cadastro das famílias, podendo detalhar ou não as necessidades de cada família, no ato de preenchimento do formulário. |
   | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro feito com sucesso e uma chave de acesso. |
 
-  | FLUXO BÁSICO |
+  | FLUXO BÁSICO - CADASTRAR FAMÍLIA |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -450,7 +448,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | A família ou voluntário deve estar logado no sistema com a chave de acesso que foi fornecida anteriormente. |
   | Pós-condições: | A família ou voluntário recebe uma lista de espera. |
 
-  | FLUXO BÁSICO |
+  | FLUXO BÁSICO - LISTAR FAMÍLIA |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -463,7 +461,7 @@ produto e entrega aos necessitados.
   |6| A família ou voluntário clica no botão fechar. | O sistema volta para a página inicial. |
   
 
- | CDU-03 |
+  | CDU-03 |
   | ----------- |
 
   | Nome do caso de uso: | ATUALIZAR CADASTRO |
@@ -474,7 +472,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | A família ou voluntário deve estar logado no sistema com a chave de acesso que foi fornecida anteriormente. |
   | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro atualizado com sucesso. |
 
-  | FLUXO BÁSICO |
+  | FLUXO BÁSICO - ATUALIZAR CADASTRO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -500,7 +498,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | A família ou voluntário deve estar logado no sistema com a chave de acesso que foi fornecida anteriormente. |
   | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro excluído com sucesso. |
 
-  | FLUXO BÁSICO |
+  | FLUXO BÁSICO - EXCLUIR FAMÍLIA |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -517,7 +515,7 @@ produto e entrega aos necessitados.
 
  
 
-#### 5. Caso de uso Efetuar pagamento on line – Raniery Azevedo
+#### 5. Caso de uso Manter Parceria – Raniery Azevedo
 
   | CDU-01 |
   | ----------- |
@@ -570,7 +568,7 @@ produto e entrega aos necessitados.
   | CDU-02 |
   | ----------- |
 
-  | Nome do caso de uso: | EXCLUIR PARCERIA |
+  | Nome do caso de uso: | EXCLUIR PARCEIRO|
   | ----------- | ----------- |
   | Ator Principal: | Organizador |
   | Atores Secundários:|  |
@@ -578,7 +576,7 @@ produto e entrega aos necessitados.
   | Pré-condições: | O organizador deve estar logado e na página de parceria. |
   | Pós-condições: | O êxito na exclusão do parceiro. |
 
-  | FLUXO BÁSICO – Incluir Parceria |
+  | FLUXO BÁSICO – Excluir Parceiro |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -594,54 +592,66 @@ produto e entrega aos necessitados.
   |9|  | O sistema exibe uma mensagem “Parceiro excluído com sucesso”. |
   |10|  | O sistema encaminha o organizador para página principal do evento. |
   
-#PAREI AQUI
+
   | FLUXO ALTERNATIVO – – Excluir Parceiro Errado. |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| | O sistema exibe a área de parceiros.  |
-  |2| O organizador aciona o botão “Adicionar parceria”. | Caso login esteja errado, solicita novamente. |
-  |3|  | O sistema exibe o formulário para o organizador.|
-  |4| O organizador preenche todos os campos do formulário. |  |
-  |5| O cliente aciona o botão “Adicionar parceiro”. | |
-  |6|  | O sistema envia uma mensagem de confirmação “Você deseja adicionar esse parceiro?”. |
-  |7| O Organizador aciona a opção “Sim”. |  |
-  |8|  | O sistema valida os dados preenchidos anteriormente pelo Organizador. |
-  |9|  | Caso exista algum campo em branco o sistema exibe uma mensagem “Campos obrigatórios não preenchidos”. |
-  |10|  | O sistema exibe novamente o formulário junto com a mensagem. |
-  |11| O Organizador preenche os dados que estão faltando e envia novamente o formulário.  |  |
-  |12|  | O sistema valida os dados preenchidos anteriormente pelo Organizador. |
-  |13|  | O sistema exibe uma mensagem: “Parceiro já cadastrado!”. |
-  |14|  | O sistema encaminha o organizador para página principal do evento. |
+  |1|  | O sistema exibe a lista de parceiros que estão cadastrados no sistema. |
+  |2| O Organizador aciona o botão “excluir parceiro”. |  |
+  |3|  | O sistema exibe um formulário de seleção. |
+  |4| O Organizador seleciona o parceiro que deseja excluir. |  |
+  |5| O Organizador aciona o botão “excluir parceiro”. |  |
+  |6|  | O sistema exibe ‘você deseja realmente excluir esse parceiro?”  |
+  |7| O organizador verifica que selecionou o parceiro errado.  |  |
+  |8| O organizador seleciona “Não” | |
+  |9|  | O sistema retorna para o formulário de seleção. |
+  |10| O Organizador seleciona o parceiro correto |  |
+  |11|  | O sistema exibe ‘você deseja realmente excluir esse parceiro?”. |
+  |12| O organizador seleciona “Sim”  |  |
+  |13|  | O sistema faz a alteração no banco de dados |
+  |14|  | O sistema exibe uma mensagem “Parceiro excluído com sucesso”. |
+  |15|  | O sistema encaminha o organizador para página principal do evento. |
 
+  | CDU-03 |
+  | ----------- |
+
+  | Nome do caso de uso: | LISTAR PARCEIRO|
+  | ----------- | ----------- |
+  | Ator Principal: | Voluntario,Organizador |
+  | Atores Secundários:|  |
+  | Descrição: | Listagem dos parceiros cadastrados no sistema para determinado evento. |
+  | Pré-condições: | O Ator deve estar logado no sistema e na aba do evento. |
+  | Pós-condições: | Apresentação de todos os parceiros que estão patrocinando o evento. |
+
+  | FLUXO BÁSICO – Lista Parceiro |
+  | ----------- |
+
+  | | Ações do Ator | Principal: Usuário Ações do Sistema: |
+  | ----------- | ----------- | ----------- |
+  |1| O ator aciona “Mostrar parceiros do evento”  |  |
+  |2|  | O sistema exibe todos os parceiros cadastrados no evento.  |
+  |3| O ator visualiza os parceiros do evento. |  |
+  |4| O ator aciona “fechar janela”. |  |
+  |5| | O sistema encaminha o ator para a página principal do evento. |
   
-
+  
 ## Lista de regras de negócio
 
 | Regras de negócio |
 | ----------- |
-| RN 1.1.1 (Cadastrar Usuário): Todo usuário do JOBER deverá obrigatoriamente vinculado a somente um CPF. |
-| RN 1.1.2 (Cadastrar Usuário): Todo usuário do JOBER deverá obrigatoriamente estar cadastrado com um dos tipos de usuário, sendo: cliente, freelancer e administrador. |
-| RN 1.1.3 (Preenchimento Obrigatório): Todos os campos do cadastro são obrigatórios, sendo eles: nome, sexo, cpf, cep, estado e tipo de usuário. |
+| RN1: O organizador ou beneficiário deve manter o cadastro atualizado. |
+| RN2: O sistema possibilitará a verificação de duas etapas para maior segurança. |
 
-
-## Lista de requisitos não funcionais
-
-|Requisitos não-funcionais|
-| ----------- |
-|RNF 1: O sistema deverá oferecer uma carteira digital para o pagamento dos serviços.|
-|RNF 2: O sistema poderá utilizar do GPS para possibilitar a visualização de Freelancers próximos ao local.|
-|RNF 3: O sistema deverá utilizar do módulo de Informações Cadastrais em modo off-line.|
-|RNF 4: O sistema possibilitará a verificação de duas etapas para maior segurança.|
 
 ## Wireframe
 
-| ![Wireframe 1!](/wireframe/Group%2001.png "Wireframe do app") | ![Wireframe 2!](/wireframe/Group%2002.png "Wireframe do app") | ![Wireframe 3!](/wireframe/Group%2003.png "Wireframe do app") | ![Wireframe 4!](/wireframe/Group%2004.png "Wireframe do app") |
+| ![Wireframe 1!](wireframe/frame-01.png "Wireframe do app") | ![Wireframe 2!](/wireframe/frame-02.png "Wireframe do app") | ![Wireframe 3!](/wireframe/frame-03.png "Wireframe do app") | ![Wireframe 4!](wireframe/frame-04.png "Wireframe do app") |
 | ----------- | ----------- | ----------- | ----------- |
-| ![Wireframe 5!](/wireframe/Group%2005.png "Wireframe do app") | ![Wireframe 6!](/wireframe/Group%2006.png "Wireframe do app") | ![Wireframe 7!](/wireframe/Group%2007.png "Wireframe do app") | ![Wireframe 8!](/wireframe/Group%2008.png "Wireframe do app") |
-| ![Wireframe 9!](/wireframe/Group%2009.png "Wireframe do app") | ![Wireframe 10!](/wireframe/Group%2010.png "Wireframe do app") | ![Wireframe 11!](/wireframe/Group%2011.png "Wireframe do app") | ![Wireframe 12!](/wireframe/Group%2012.png "Wireframe do app") |
-| ![Wireframe 13!](/wireframe/Group%2013.png "Wireframe do app") | 
+| ![Wireframe 5!](/wireframe/frame-05.png "Wireframe do app") | ![Wireframe 6!](/wireframe/frame-06.png "Wireframe do app") | ![Wireframe 7!](/wireframe/frame-07.png "Wireframe do app") | ![Wireframe 8!](/wireframe/frame-08.png "Wireframe do app") |
+| ![Wireframe 9!](/wireframe/frame-09.png "Wireframe do app") | ![Wireframe 10!](/wireframe/frame-10.png "Wireframe do app") | ![Wireframe 11!](/wireframe/frame-11.png "Wireframe do app") | ![Wireframe 12!](/wireframe/frame-12.png "Wireframe do app") |
+| ![Wireframe 13!](/wireframe/frame-13.png "Wireframe do app") | 
 
 ## Autores
 
