@@ -114,7 +114,7 @@ produto e entrega aos necessitados.
 
 ### 1. Diagrama de casos de uso
 
-![Use Case!](/usecase/use-case-full.png "Diagrama de Casos de Uso do Sistema")
+![Use Case!](/usercase/UseCaseHelpy.png "Diagrama de Casos de Uso do Sistema")
 
 ### 2. Especificação de casos de uso
 
@@ -513,8 +513,6 @@ produto e entrega aos necessitados.
   |8|  | O sistema volta para a página inicial. |
 
 
- 
-
 #### 5. Caso de uso Manter Parceria – Raniery Azevedo
 
   | CDU-01 |
@@ -545,7 +543,7 @@ produto e entrega aos necessitados.
   |10|  | O sistema exibe a mensagem para o cliente “Parceiro adicionado com exito”. |
   |11|  | O sistema encaminha o Organizador para página inicial do evento. |
 
-  | FLUXO ALTERNATIVO – – Empresa Já Cadastrada |
+  | FLUXO ALTERNATIVO – Empresa Já Cadastrada |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
@@ -593,7 +591,7 @@ produto e entrega aos necessitados.
   |10|  | O sistema encaminha o organizador para página principal do evento. |
   
 
-  | FLUXO ALTERNATIVO – – Excluir Parceiro Errado. |
+  | FLUXO ALTERNATIVO – Excluir Parceiro Errado. |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
