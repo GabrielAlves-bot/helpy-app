@@ -417,41 +417,105 @@ produto e entrega aos necessitados.
   | CDU-01 |
   | ----------- |
 
-  | Nome do caso de uso: | INTERAGIR VIA CHAT |
+  | Nome do caso de uso: | CADASTRAR FAMÍLIA |
   | ----------- | ----------- |
-  | Ator Principal: | Cliente, Freelancer |
-  | Atores Secundários:| Administrador |
-  | Descrição: | Interagir com os usuários via chat. |
-  | Pré-condições: | Ter o aplicativo instalado para ter acesso ao chat. Estar logado. |
-  | Pós-condições: | Mensagem enviada e mensagem recebida. |
+  | Ator Principal: | Família |
+  | Atores Secundários:| Voluntários |
+  | Descrição: | Cadastrar as famílias carentes e suas necessidades. |
+  | Pré-condições: | A família ou voluntário deve acessar o sistema, especificamente na página de cadastro das famílias, podendo detalhar ou não as necessidades de cada família, no ato de preenchimento do formulário. |
+  | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro feito com sucesso e uma chave de acesso. |
 
-  | FLUXO BÁSICO – Interagir via chat |
+  | FLUXO BÁSICO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| Enviar mensagens com dúvidas referentes aos serviços a serem contratados e aos serviços a serem prestados. | Notificar se a mensagem foi recebida. |
-  |2|  | Notificar se a mensagem foi visualizada. |
+  |1| A família acessa a página de cadastro.  | O sistema exibe o formulário para a família. |
+  |2| Preencher o formulário de cadastro das famílias.  |  |
+  |3|  | O sistema exibe um campo para detalhar alguma necessidade especial. |
+  |4| Detalhar alguma necessidade especial, caso exista.  |  |
+  |5| A família clica no botão enviar.  | O sistema valida os dados preenchidos anteriormente pela família. |
+  |6|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema. |
+  |7|  | O sistema gera um chave individual para cada família. |
+  |8|  | O sistema volta para a página inicial. |
 
-  | FLUXO ALTERNATIVO 1 – Descumprimento das regras de conduta no chat |
+   | CDU-02 |
+  | ----------- |
+
+  | Nome do caso de uso: | LISTAR FAMÍLIA |
+  | ----------- | ----------- |
+  | Ator Principal: | Família |
+  | Atores Secundários:| Voluntários |
+  | Descrição: | Fornecer às famílias a posição em que elas se encontram na lista de espera. |
+  | Pré-condições: | A família ou voluntário deve estar logado no sistema com a chave de acesso que foi fornecida anteriormente. |
+  | Pós-condições: | A família ou voluntário recebe uma lista de espera. |
+
+  | FLUXO BÁSICO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| Estando o usuário logado no sistema, ele envia uma mensagem para outro usuário sobre os serviços prestados. | O sistema transfere a mensagem para outro usuário. |
-  |2| O usuário recebe a mensagem. | Notificar se a mensagem foi recebida. |
-  |3|  | Notificar se a mensagem foi visualizada. |
-  |4| O Usuário envia perguntas com assuntos não referentes ao app. | Notificar o usuário com as regras para o uso do chat. |
+  |1| A família ou voluntário acessa a página de login.  |  |
+  |2| A família ou voluntário clica no botão em fazer login.  | O sistema solicita a chave de acesso. |
+  |3| A família ou voluntário faz o login.  | O sistema exibe a opção Listar Família para a família ou voluntário. |
+  |4| A família ou voluntário clica em Listar Família. |  |
+  |5|   | O sistema exibe uma lista de espera com a posição de cada família. |
+  |6| A família ou voluntário clica no botão fechar. | O sistema volta para a página inicial. |
+  
 
-  | FLUXO ALTERNATIVO – INTERVENÇÃO DO ADMINISTRADOR |
+ | CDU-03 |
+  | ----------- |
+
+  | Nome do caso de uso: | ATUALIZAR CADASTRO |
+  | ----------- | ----------- |
+  | Ator Principal: | Família |
+  | Atores Secundários:| Voluntários |
+  | Descrição: | Alteração dos dados feito no ato do cadastro. |
+  | Pré-condições: | A família ou voluntário deve estar logado no sistema com a chave de acesso que foi fornecida anteriormente. |
+  | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro atualizado com sucesso. |
+
+  | FLUXO BÁSICO |
   | ----------- |
 
   | | Ações do Ator | Principal: Usuário Ações do Sistema: |
   | ----------- | ----------- | ----------- |
-  |1| Enviar mensagens com dúvidas referentes aos serviços a serem contratados e aos serviços a serem prestados. | Notificar se a mensagem foi recebida. |
-  |2| Notificar se a mensagem foi visualizada. | Notificar se a mensagem foi recebida. |
-  |3| Usuário envia perguntas com assuntos não referentes ao app. | Notificar o usuário com as regras para o uso do chat. |
-  |4| Usuário descumpri as regras do chat ou usa palavras de baixo calão. | O usuário é bloqueado e notificado sobre o bloqueio. |
+  |1| A família ou voluntário acessa a página de cadastro.  |  |
+  |2|  A família ou voluntário clica no botão em fazer login.  | O sistema solicita a chave de acesso.  |
+  |3|  | O sistema exibe o formulário para a família ou voluntário. |
+  |4| A família ou voluntário clica em atualizar o formulário de cadastro das famílias.  |  |
+  |5| Detalhar alguma necessidade especial, caso exista.  | O sistema exibe um campo para detalhar alguma necessidade especial. |
+  |6| A família ou voluntário clica no botão enviar. | O sistema valida os dados preenchidos anteriormente pela a família ou voluntário. |
+  |7|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema. |
+  |8|  | O sistema volta para a página inicial. |
+
+
+  | CDU-04 |
+  | ----------- |
+
+  | Nome do caso de uso: | ATUALIZAR CADASTRO |
+  | ----------- | ----------- |
+  | Ator Principal: | Família |
+  | Atores Secundários:| Voluntários |
+  | Descrição: | Alteração dos dados feito no ato do cadastro. |
+  | Pré-condições: | A família ou voluntário deve estar logado no sistema com a chave de acesso que foi fornecida anteriormente. |
+  | Pós-condições: | A família ou voluntário recebe uma notificação: Cadastro atualizado com sucesso. |
+
+  | FLUXO BÁSICO |
+  | ----------- |
+
+  | | Ações do Ator | Principal: Usuário Ações do Sistema: |
+  | ----------- | ----------- | ----------- |
+  |1| A família ou voluntário acessa a página de cadastro.  |  |
+  |2|  A família ou voluntário clica no botão em fazer login.  | O sistema solicita a chave de acesso.  |
+  |3|  | O sistema exibe o formulário para a família ou voluntário. |
+  |4| A família ou voluntário clica em atualizar o formulário de cadastro das famílias.  |  |
+  |5| Detalhar alguma necessidade especial, caso exista.  | O sistema exibe um campo para detalhar alguma necessidade especial. |
+  |6| A família ou voluntário clica no botão enviar. | O sistema valida os dados preenchidos anteriormente pela a família ou voluntário. |
+  |7|  | O sistema encaminha o formulário preenchido ao banco de dados do sistema. |
+  |8|  | O sistema volta para a página inicial. |
+
+
+ 
 
 #### 5. Caso de uso Efetuar pagamento on line – Raniery Azevedo
 
