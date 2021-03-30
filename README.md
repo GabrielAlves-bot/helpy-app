@@ -732,30 +732,6 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais
 
 # HELPY - DOCUMENTO DE ARQUITETURA DE SOFTWARE
 
-## Sumário
-
-1. [Introdução](#introdução)
-   
-2. [Posicionamento](#posicionamento)
-   
-    2.1. [Declaração do problema](#1-declaração-do-problema)
-
-    2.2. [Declaração da posição do produto](#1-declaração-da-posição-do-produto)
-
-3. [Declaração das partes interessadas](#declaração-das-partes-interessadas)
-   
-    3.1. [Resumo das partes interessadas](#1-resumo-das-partes-interessadas)
-
-    3.2. [Ambiente do usuário](#2-ambiente-do-usuário)
-
-4. [Visão geral do produto](#visão-geral-do-produto)
-   
-    4.1. [Necessidades e recursos](#1-necessidades-e-recursos)
-
-5. [Outros requisitos do produto](#outros-requisitos-do-produto)
-   
-6. [Requisitos funcionais](#requisitos-funcionais)
-
 ## Introdução
 
 O presente documento tem como objetivo descrever o documento de arquitetura do projeto Helpy. Este sistema tem como finalidade o aumento do índice de doações de alimentos na Ceilândia, mediante a realização de campanhas que podem ser compartilhadas nas redes sociais.O app oferece uma plataforma digital que busca integrar famílias e voluntários de forma eficiente em eventos beneficentes.
@@ -821,4 +797,19 @@ perder desempenho em telas de carregamento ou de seções.
   |Disponibilidade| Esta é uma medida de quão disponível o sistema estaria para uso, isto é, quão disponível o sistema estaria para efetuar um serviço solicitado por algum usuário. | A plataforma estará sempre online, buscando também atender 99% das solicitações dos usuários, salvo quando houver alguma manutenção no sistema. |
   |Portabilidade| A facilidade na qual o software pode ser transferido de um sistema computacional ou ambiente para outro.  | A plataforma terá portabilidade para sistemas mobile como por exemplo Android e IOS. |
   |Segurança| a segurança de que acessos não autorizados ao sistema e dados associados não serão permitidos. | O sistema contará com criptografia de todos os dados do usuário, assim também a realização de manutenções pelo menos a cada 3 meses lançando assim patchs de segurança, afim de manter a integridade do sistema. |
+  
+  ## Referências
+
+ - PRESSMAN, Roger. Engenharia de software. 8. Porto Alegre AMGH 2016
+ - GUEDES, Gilleanes. UML 2 GUIA PRÁTICO. 2a Edição. São Paulo Novatec Editora 2014 
+ - LUCIDCHART. O que é um Diagrama de Implantação. Disponivel em: <https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml> Acesso em: 27/10/2020
+ - FOWLER, Martin. UML essencial um breve guia para linguagem padrão. 3a Edição. Porto Alegre Bookman 2011
+ - TOMAS, Anderson. O modelo 4 + 1. Disponivel:<http://tassinfo.com.br/orientacao-a-objeto/o-modelo-4-1/> Acesso: 15/17/2020
+ - Material de apoio do Prof. André Gustavo Bastos Lima
+
+## Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+## Obrigado!<br><Br>
   
